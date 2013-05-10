@@ -2,8 +2,11 @@
 
 from distutils.core import setup
 
-with open('README') as file:
-    long_description = file.read()
+long_description = '''
+Use this package to render your forms as JSON objects.
+
+Documentation on https://github.com/rafaelsierra/django-json-mixin-form
+''' 
 
 setup(name='sierra-django-json-mixin-form',
       version='1.0',
