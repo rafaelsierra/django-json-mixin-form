@@ -1,10 +1,11 @@
+================================
 Django View Mixin for JSON Forms
 ================================
 
 This is a Mixin for Classbased Form Views which renders the POST result in JSON
 format.
 
-
+=====
 Usage
 =====
 
@@ -13,7 +14,9 @@ or `easy_install sierra-django-json-mixin-form`
 
 There is no need to configure anything in settings.py.
 
-Import and use it (testmixins folder contains a simple usage):
+Import and use it (testmixins folder contains a simple usage)
+
+::
 
     # myapp/views.py
     from sierra.dj.mixins.forms import JSONFormMixin
@@ -39,7 +42,7 @@ Import and use it (testmixins folder contains a simple usage):
         # success_url = Unused
         
 
-Add this view to your urls.py and call it via javascript.
+Add this view to your urls.py and call it via javascript.::
 
     # myproject/urls.py
     from django.conf.urls import patterns, include, url
@@ -52,7 +55,7 @@ Add this view to your urls.py and call it via javascript.
 
 
 *NOTE:* This example is writing using jQuery, but you don't actually need any
-Javascript library. I'm using jQuery just because it is easier.
+Javascript library. I'm using jQuery just because it is easier.::
 
     # myscript.js
     $("#form").on('submit', function(){
@@ -79,7 +82,7 @@ return in JSON:
 * include_success = False # In case of valid form, this will include a "success": true on JSON
 * sucess_key = 'success' # Key used to signal success
 
-To set any of these attributes, just set as class variable (or using self.<option>)
+To set any of these attributes, just set as class variable (or using self.<option>)::
 
     class MyView(JSONFormMixin, FormView):
         json_encoding = 'iso-8859-1'
@@ -89,7 +92,7 @@ To set any of these attributes, just set as class variable (or using self.<optio
 Response content
 ================
 
-Depending on form validation JSON return will be something like this:
+Depending on form validation JSON return will be something like this::
 
     {
         'success': bool, // Set only when View.include_success = True (default)
