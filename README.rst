@@ -87,7 +87,11 @@ To set any of these attributes, just set as class variable (or using self.<optio
     class MyView(JSONFormMixin, FormView):
         json_encoding = 'iso-8859-1'
         success_key = 'done'
-        
+
+
+Note that hidden fields are not supposed to not validate since they usually are 
+set by the server, but anyway...
+         
 
 Response content
 ================

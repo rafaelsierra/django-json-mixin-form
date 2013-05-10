@@ -9,7 +9,7 @@ Documentation on https://github.com/rafaelsierra/django-json-mixin-form
 ''' 
 
 setup(name='sierra-django-json-mixin-form',
-      version='1.0',
+      version='1.1',
       description='Utility to render Form responses in a JSON usable format',
       long_description=long_description,
       author='Rafael Sierra',
