@@ -6,10 +6,10 @@ long_description = '''
 Use this package to render your forms as JSON objects.
 
 Documentation on https://github.com/rafaelsierra/django-json-mixin-form
-''' 
+'''
 
 setup(name='sierra-django-json-mixin-form',
-      version='1.1',
+      version='1.1.1',
       description='Utility to render Form responses in a JSON usable format',
       long_description=long_description,
       author='Rafael Sierra',
